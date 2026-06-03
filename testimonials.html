@@ -214,6 +214,19 @@
         mobile.classList.remove('open');
       });
     });
+
+    document.querySelectorAll('.testimonial-quote').forEach(quote => {
+      if (quote.scrollHeight > quote.clientHeight) {
+        const btn = document.createElement('button');
+        btn.className = 'read-more-btn';
+        btn.textContent = 'Read more';
+        btn.addEventListener('click', () => {
+          quote.classList.toggle('expanded');
+          btn.textContent = quote.classList.contains('expanded') ? 'Read less' : 'Read more';
+        });
+        quote.after(btn);
+      }
+    });
   </script>
 </body>
 </html>

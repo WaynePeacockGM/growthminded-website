@@ -405,8 +405,26 @@ strong { color: var(--text); font-weight: 600; }
   font-size: 0.95rem;
   line-height: 1.7;
   color: var(--text-muted);
-  flex: 1;
   font-style: italic;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.testimonial-quote.expanded {
+  display: block;
+  overflow: visible;
+}
+.read-more-btn {
+  background: none;
+  border: none;
+  color: var(--orange);
+  font-size: 0.83rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  align-self: flex-start;
 }
 .section-dark .testimonial-quote { color: rgba(255,255,255,0.78); }
 .testimonial-stars { color: var(--orange); font-size: 0.9rem; letter-spacing: 2px; }
