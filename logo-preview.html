@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Growth Minded — Logo Concepts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1a2e4a;
+    --orange: #f39c12;
+    --cream: #f9f7f4;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: #f0ede8;
+    padding: 40px 24px;
+    min-height: 100vh;
+  }
+  h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+  .intro { color: #5a6170; font-size: 0.9rem; margin-bottom: 40px; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 28px;
+    max-width: 1200px;
+  }
+  .card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 16px rgba(26,46,74,0.1);
+  }
+  .card-preview {
+    background: var(--cream);
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+  }
+  .card-preview.dark {
+    background: var(--navy);
+  }
+
+  /* ── Nav-size logo (the actual usage size) ── */
+  .logo-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+  .logo-nav .wordmark {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1;
+  }
+  .logo-nav .wordmark span { color: var(--orange); }
+  .logo-nav.on-dark .wordmark { color: white; }
+
+  /* ── Large display size ── */
+  .logo-large {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+  }
+  .logo-large .wordmark {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1;
+  }
+  .logo-large .wordmark span { color: var(--orange); }
+  .logo-large.on-dark .wordmark { color: white; }
+
+  .size-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #9ca3af;
+    margin-bottom: 6px;
+  }
+
+  .card-info {
+    padding: 20px 24px;
+    border-top: 1px solid #e5e7eb;
+  }
+  .concept-num {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 4px;
+  }
+  .concept-name {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.1rem;
+    color: var(--navy);
+    margin-bottom: 6px;
+  }
+  .concept-desc {
+    font-size: 0.85rem;
+    color: #5a6170;
+    line-height: 1.5;
+  }
+</style>
+</head>
+<body>
+
+<h1>Growth Minded — Logo Concepts</h1>
+<p class="intro">5 directions, shown at nav size and large display size. Open index.html once you've chosen.</p>
+
+<div class="grid">
+
+  <!-- ══════════════════════════════════════════
+       CONCEPT 1 — Upward-Curving G Lettermark
+  ══════════════════════════════════════════ -->
+  <div class="card">
+    <div class="card-preview">
+      <div>
+        <div class="size-label">Nav size</div>
+        <a class="logo-nav">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="16" fill="#1a2e4a"/>
+            <!-- G shape -->
+            <path d="M21 11.5 A7.5 7.5 0 1 0 23.5 17 H17.5" stroke="white" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+            <!-- Arrow tip on crossbar -->
+            <polyline points="17.5,14.5 21.5,17 17.5,19.5" stroke="#f39c12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+          <span class="wordmark">Growth <span>Minded</span></span>
+        </a>
+      </div>
+      <div>
+        <div class="size-label">Display size</div>
+        <a class="logo-large">
+          <svg width="52" height="52" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="16" fill="#1a2e4a"/>
+            <path d="M21 11.5 A7.5 7.5 0 1 0 23.5 17 H17.5" stroke="white" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+            <polyline points="17.5,14.5 21.5,17 17.5,19.5" stroke="#f39c12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+          <span class="wordmark">Growth <span>Minded</span></span>
+        </a>
+      </div>
+      <div>
+        <div class="size-label">On dark background</div>
+        <div style="background:#1a2e4a; padding:16px 20px; border-radius:8px; display:inline-flex;">
+          <a class="logo-nav on-dark">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="16" cy="16" r="16" fill="#f39c12"/>
+              <path d="M21 11.5 A7.5 7.5 0 1 0 23.5 17 H17.5" stroke="#1a2e4a" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+              <polyline points="17.5,14.5 21.5,17 17.5,19.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+            <span class="wordmark">Growth <span>Minded</span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="card-info">
+      <div class="concept-num">Concept 1</div>
+      <div class="concept-name">Upward G Lettermark</div>
+      <div class="concept-desc">The "G" becomes a momentum symbol — the crossbar ends in an orange arrow pointing right. Bold, circular badge form. Scales to a favicon perfectly.</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       CONCEPT 2 — GM Monogram
+  ══════════════════════════════════════════ -->
+  <div class="card">
+    <div class="card-preview">
+      <div>
+        <div class="size-label">Nav size</div>
+        <a class="logo-nav">
+          <svg width="34" height="32" viewBox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- G -->
+            <path d="M14 8 A8 8 0 1 0 22 16 H15" stroke="#1a2e4a" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <line x1="15" y1="13" x2="22" y2="13" stroke="#1a2e4a" stroke-width="2.5" stroke-linecap="round"/>
+            <!-- M (shares the right edge) -->
+            <polyline points="22,8 22,24 28,16 34,24 34,8" stroke="#f39c12" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <!-- Orange underline accent -->
+            <line x1="0" y1="30" x2="34" y2="30" stroke="#f39c12" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span class="wordmark">Growth <span>Minded</span></span>
+        </a>
+      </div>
+      <div>
+        <div class="size-label">Display size</div>
+        <a class="logo-large">
+          <svg width="56" height="52" viewBox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 8 A8 8 0 1 0 22 16 H15" stroke="#1a2e4a" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <line x1="15" y1="13" x2="22" y2="13" stroke="#1a2e4a" stroke-width="2.5" stroke-linecap="round"/>
+            <polyline points="22,8 22,24 28,16 34,24 34,8" stroke="#f39c12" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <line x1="0" y1="30" x2="34" y2="30" stroke="#f39c12" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span class="wordmark">Growth <span>Minded</span></span>
+        </a>
+      </div>
+      <div>
+        <div class="size-label">On dark background</div>
+        <div style="background:#1a2e4a; padding:16px 20px; border-radius:8px; display:inline-flex;">
+          <a class="logo-nav on-dark">
+            <svg width="34" height="32" viewBox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 8 A8 8 0 1 0 22 16 H15" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+              <line x1="15" y1="13" x2="22" y2="13" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+              <polyline points="22,8 22,24 28,16 34,24 34,8" stroke="#f39c12" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <line x1="0" y1="30" x2="34" y2="30" stroke="#f39c12" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <span class="wordmark">Growth <span>Minded</span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="card-info">
+      <div class="concept-num">Concept 2</div>
+      <div class="concept-name">GM Monogram</div>
+      <div class="concept-desc">Navy "G" and orange "M" side by side with a shared stem — a classic consulting-firm monogram. Premium and understated. Orange underline ties the two letters together.</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       CONCEPT 3 — Sparkline in Head Silhouette
+  ══════════════════════════════════════════ -->
+  <div class="card">
+    <div class="card-preview">
+      <div>
+        <div class="size-label">Nav size</div>
+        <a class="logo-nav">
+          <svg width="28" height="32" viewBox="0 0 28 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Head silhouette -->
+            <path d="M14 2 C6 2 2 8 2 14 C2 20 6 25 11 27 L11 30 L17 30 L17 27 C22 25 26 20 26 14 C26 8 22 2 14 2 Z" fill="#1a2e4a"/>
+            <!-- Neck/shoulders suggestion -->
+            <rect x="11" y="30" width="6" height="4" rx="1" fill="#1a2e4a"/>
+            <!-- Sparkline inside head -->
+            <polyline points="6,18 9,15 12,17 15,11 18,13 22,8" stroke="#f39c12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+          <span class="wordmark">Growth <span>Minded</span></span>
+        </a>
+      </div>
+      <div>
+        <div class="size-label">Display size</div>
+        <a class="logo-large">
+          <svg width="46" height="52" viewBox="0 0 28 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 2 C6 2 2 8 2 14 C2 20 6 25 11 27 L11 30 L17 30 L17 27 C22 25 26 20 26 14 C26 8 22 2 14 2 Z" fill="#1a2e4a"/>
+            <rect x="11" y="30" width="6" height="4" rx="1" fill="#1a2e4a"/>
+            <polyline points="6,18 9,15 12,17 15,11 18,13 22,8" stroke="#f39c12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+          <span class="wordmark">Growth <span>Minded</span></span>
+        </a>
+      </div>
+      <div>
+        <div class="size-label">On dark background</div>
+        <div style="background:#1a2e4a; padding:16px 20px; border-radius:8px; display:inline-flex;">
+          <a class="logo-nav on-dark">
+            <svg width="28" height="32" viewBox="0 0 28 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 2 C6 2 2 8 2 14 C2 20 6 25 11 27 L11 30 L17 30 L17 27 C22 25 26 20 26 14 C26 8 22 2 14 2 Z" fill="white"/>
+              <rect x="11" y="30" width="6" height="4" rx="1" fill="white"/>
+              <polyline points="6,18 9,15 12,17 15,11 18,13 22,8" stroke="#f39c12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+            <span class="wordmark">Growth <span>Minded</span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="card-info">
+      <div class="concept-num">Concept 3</div>
+      <div class="concept-name">Sparkline in Head</div>
+      <div class="concept-desc">A head silhouette with an upward-trending sparkline inside — "Minded" meets "Growth" in one mark. Human and distinctive. Also references your Sparkline app product.</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       CONCEPT 4 — Sprouting G with Leaf
+  ══════════════════════════════════════════ -->
+  <div class="card">
+    <div class="card-preview">
+      <div>
+        <div class="size-label">Nav size</div>
+        <a class="logo-nav">
+          <svg width="28" height="32" viewBox="0 0 28 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- G letter -->
+            <path d="M24 10 A10 10 0 1 0 26 19 H17" stroke="#1a2e4a" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+            <!-- Stem growing from G opening -->
+            <line x1="26" y1="19" x2="26" y2="10" stroke="#1a2e4a" stroke-width="2" stroke-linecap="round"/>
+            <!-- Left leaf -->
+            <path d="M26 14 C22 12 20 8 23 6 C26 8 27 12 26 14Z" fill="#f39c12"/>
+            <!-- Right leaf -->
+            <path d="M26 12 C30 10 32 6 29 4 C26 6 25 10 26 12Z" fill="#f39c12" opacity="0.8"/>
+          </svg>
+          <span class="wordmark">Growth <span>Minded</span></span>
+        </a>
+      </div>
+      <div>
+        <div class="size-label">Display size</div>
+        <a class="logo-large">
+          <svg width="46" height="52" viewBox="0 0 28 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 10 A10 10 0 1 0 26 19 H17" stroke="#1a2e4a" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+            <line x1="26" y1="19" x2="26" y2="10" stroke="#1a2e4a" stroke-width="2" stroke-linecap="round"/>
+            <path d="M26 14 C22 12 20 8 23 6 C26 8 27 12 26 14Z" fill="#f39c12"/>
+            <path d="M26 12 C30 10 32 6 29 4 C26 6 25 10 26 12Z" fill="#f39c12" opacity="0.8"/>
+          </svg>
+          <span class="wordmark">Growth <span>Minded</span></span>
+        </a>
+      </div>
+      <div>
+        <div class="size-label">On dark background</div>
+        <div style="background:#1a2e4a; padding:16px 20px; border-radius:8px; display:inline-flex;">
+          <a class="logo-nav on-dark">
+            <svg width="28" height="32" viewBox="0 0 28 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 10 A10 10 0 1 0 26 19 H17" stroke="white" stroke-width="2.8" stroke-linecap="round" fill="none"/>
+              <line x1="26" y1="19" x2="26" y2="10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              <path d="M26 14 C22 12 20 8 23 6 C26 8 27 12 26 14Z" fill="#f39c12"/>
+              <path d="M26 12 C30 10 32 6 29 4 C26 6 25 10 26 12Z" fill="#f39c12" opacity="0.8"/>
+            </svg>
+            <span class="wordmark">Growth <span>Minded</span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="card-info">
+      <div class="concept-num">Concept 4</div>
+      <div class="concept-name">Sprouting G</div>
+      <div class="concept-desc">The "G" letterform with two orange leaves sprouting from its opening — organic, warm, and friendly. The negative space inside the G becomes a natural stem. Approachable for a coaching brand.</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       CONCEPT 5 — Three Rising Arcs
+  ══════════════════════════════════════════ -->
+  <div class="card">
+    <div class="card-preview">
+      <div>
+        <div class="size-label">Nav size</div>
+        <a class="logo-nav">
+          <svg width="26" height="32" viewBox="0 0 26 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Three arcs of increasing height, bottom-aligned -->
+            <!-- Arc 1 (shortest, left, light navy) -->
+            <path d="M4 24 A6 6 0 0 1 4 12" stroke="#243d60" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <!-- Arc 2 (medium, centre, navy) -->
+            <path d="M13 24 A10 10 0 0 1 13 4" stroke="#1a2e4a" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <!-- Arc 3 (tallest, right, orange) -->
+            <path d="M22 24 A13 13 0 0 1 22 0" stroke="#f39c12" stroke-width="3" stroke-linecap="round" fill="none"/>
+          </svg>
+          <span class="wordmark">Growth <span>Minded</span></span>
+        </a>
+      </div>
+      <div>
+        <div class="size-label">Display size</div>
+        <a class="logo-large">
+          <svg width="42" height="52" viewBox="0 0 26 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 24 A6 6 0 0 1 4 12" stroke="#243d60" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <path d="M13 24 A10 10 0 0 1 13 4" stroke="#1a2e4a" stroke-width="3" stroke-linecap="round" fill="none"/>
+            <path d="M22 24 A13 13 0 0 1 22 0" stroke="#f39c12" stroke-width="3" stroke-linecap="round" fill="none"/>
+          </svg>
+          <span class="wordmark">Growth <span>Minded</span></span>
+        </a>
+      </div>
+      <div>
+        <div class="size-label">On dark background</div>
+        <div style="background:#1a2e4a; padding:16px 20px; border-radius:8px; display:inline-flex;">
+          <a class="logo-nav on-dark">
+            <svg width="26" height="32" viewBox="0 0 26 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 24 A6 6 0 0 1 4 12" stroke="rgba(255,255,255,0.45)" stroke-width="3" stroke-linecap="round" fill="none"/>
+              <path d="M13 24 A10 10 0 0 1 13 4" stroke="white" stroke-width="3" stroke-linecap="round" fill="none"/>
+              <path d="M22 24 A13 13 0 0 1 22 0" stroke="#f39c12" stroke-width="3" stroke-linecap="round" fill="none"/>
+            </svg>
+            <span class="wordmark">Growth <span>Minded</span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="card-info">
+      <div class="concept-num">Concept 5</div>
+      <div class="concept-name">Three Rising Arcs</div>
+      <div class="concept-desc">Three vertical arcs of increasing height — light navy, navy, orange — reading left to right as a growth progression. Geometric, modern, and completely scalable. Works at any size from 16px to billboard.</div>
+    </div>
+  </div>
+
+</div>
+
+<p style="margin-top:40px; color:#9ca3af; font-size:0.8rem;">Once you've chosen a concept, tell Claude the number and it will apply it across all 6 pages.</p>
+
+</body>
+</html>
